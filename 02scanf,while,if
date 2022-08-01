@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+int main()
+{
+	char a[] = "yes";
+	printf("你是二次元吗(yes/no)\n");
+	scanf("%s", &a);
+	if (strcmp(a, "yes") == 0)
+	{
+		printf("哦豁，好兄弟\n");
+	}
+	else
+	{
+		printf("修炼去！\n");
+		int i = 0;
+		while (i < 10)
+		{
+			printf("看番一年\n");
+			i++;
+		}
+		if (i >= 10)
+			printf("欢迎你，二刺猿\n");
+	}
+	system("pause");
+	return 0;
+}
