@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+int main()
+{
+	printf("您好\n");
+	printf("您要使用加法器吗\n");
+	system("pause");
+	printf("好的\n");
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	scanf_s("%d%d", &a, &b);
+	c = a + b;
+	printf("%d\n", c);
+	system("pause");
+	printf("请您欣赏PR大作\n");
+	system("pause");
+	system("C:\\Users\\Administrator\\Desktop\\PR\\碧藍三周年混剪.mp4");
+	return 0;
+}
