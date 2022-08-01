@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+struct man
+{
+	char name[20];
+	char sex[20];
+	int age;
+	char country[20];
+	int height;
+	int weight;
+};
+int main()
+{
+	struct man p1 = { "buuuug","male",18,"china",171,75};
+	struct man* pb = &p1;
+	printf("name:%s\n", p1.name);
+	printf ("sex:%s\n", p1.sex);
+	printf("age:%d\n", p1.age);
+	printf("country:%s\n", p1.country);
+	printf("height:%dcm\n", (*pb).height);
+	printf("weight:%dkg\n", pb->weight);
+	
+}
