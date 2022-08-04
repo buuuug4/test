@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	int i = 2;
+	int j = 0;
+	printf("请输入素数范围\n");
+	scanf("%d",&j);
+	printf("%d %d %d %d ", 2, 3, 5, 7);
+	while (i <= j)
+	{
+		if (i % 2 == 0 || i % 3 == 0 || i % 5 == 0 || i % 7 == 0)
+			i++;
+		else
+		{
+			printf("%d ", i);
+			i++;
+		}
+
+	}
+	return 0;
+}
