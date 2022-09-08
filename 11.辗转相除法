@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int a = 0;
+	int b = 0;
+	int d = 0;
+	scanf("%d%d", &a, &b);
+	if (a < b)
+	{
+		d = a;
+		a = b;
+		b = d;
+	}
+	int c = a % b;
+	if (c == 0)
+	{
+		printf("%d", b);
+	}
+	else
+	{
+		for (; c != 0;)
+		{
+			a = b;
+			b = c;
+			c = a % b;
+		}
+		printf("%d", b);
+	}
+	return 0;
+}
