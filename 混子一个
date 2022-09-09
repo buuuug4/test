@@ -1,0 +1,21 @@
+int main()
+{
+	printf("是否开始清理垃圾(Y/N)\n");
+	char a;
+	scanf("%c", &a);
+	if (a == 'Y')
+		printf("开始清理\n");
+	else
+		printf("不清也得清\n");
+	int i = 0;
+	for (i = 0; i <= 100; i++)
+	{
+		printf("%d %%", i);
+		if (i == 99)
+			Sleep(10000);
+		system("cls");
+
+	}
+	return 0;
+
+}
